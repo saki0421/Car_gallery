@@ -1,0 +1,74 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  }
+
+header {
+    background-color: #f3f3f31;
+    height: 85px;
+}
+
+.logo {
+    float: left;
+    font-size: 40px;
+    padding: 20px;
+    padding-left: 250px;
+}
+
+header ul {
+    list-style: none;
+    text-align: right;
+}
+
+header li {
+    display: inline-block;
+    padding: 45px 25px; 
+}
+
+
+.main {
+    height: 1100px;
+    width: 1910px;
+    background-color: rgb(200, 215, 218);
+    
+}
+
+.photo  {
+    width: 1500px;
+    margin: auto;
+}
+
+.photo_gallery {
+    height: 750px;
+    width: 1500px;
+    background-color: rgb(198, 213, 233);
+    margin: auto;
+}
+
+
+.portfolio_1,.portholio_2 {
+    float: left;
+    width: 500px;
+    
+}
+
+
+.ABOUT {
+    height: 600px;
+    width: 1000px;
+    background-color:rgba(102, 156, 156, 0.712);
+    margin: auto;
+}
+
+.ABOUT h1 {
+    font-size: 60px;
+
+
+}
