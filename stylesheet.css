@@ -6,8 +6,15 @@ form, input, div {
   padding: 0;
 }
 
+h1 {
+    opacity: 0.7;
+    font-size: 70px;
+    padding-top: 20px;
+    text-align: center;
+}
+
 a {
-text-decoration: none;
+    text-decoration: none;
 }
 
 body {
@@ -15,16 +22,19 @@ body {
   }
 
 header {
+    z-index: 1;
     background-color: #ebebeb;
-    height: 85px;
-    width: 1500px;　/*なんかおかしい*/
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 2px 15px -2px rgb(157, 159, 160);
+	position:relative;
 }
 
 .logo {
     float: left;
     font-size: 40px;
     padding: 20px;
-    padding-left: 250px;
+    padding-left: 100px;
 }
 
 header ul {
@@ -34,89 +44,94 @@ header ul {
 
 header li {
     display: inline-block;
-    padding: 45px 25px; 
+    padding: 40px 25px; 
+    font-size: 20px;
 }
 
 
 .main {
     width: 100%;
     background-color: rgb(255, 255, 255);  
-}
-
-.photo  {    
     text-align: auto;
 }
 
-.photo_gallery {
-    width: 1500px; /*確認*/
-    height: 720px;
-    background-color: rgb(248, 244, 244);  
-    list-style: none;
+.photo img {    
+    width: 100%;
 }
 
-.portfolio_1,.portholio_2 {
-    float: left;
-    width: 500px;
+.photo_gallery {
+    height: 1090px;
+    background-color: rgb(248, 244, 244);  
+    list-style-type: none;
     flex-wrap: wrap;
 }
 
 
-.about {
-    height: 400px;
-    width: 1500px;
-    background-color:rgba(183, 204, 204, 0.712);
-    margin: auto;
-}
-
-.about h1 {
-    font-size: 70px;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.profile img {
-    width: 15%;    /* 横幅を割合で指定 */
-    height: auto; 
-    left: 50px;
+.portfolio_1,.portholio_2 {  /* 見直し必要 */
+    float: left;
+    margin: 20px;
+    width: 450px;
     
 }
 
+
+
+.about {
+    height: 500px;
+    width: 100%;
+    background-color:rgba(183, 204, 204, 0.445);
+    margin: auto;
+    position: relative;
+}
+
+
+.profile img { 
+    width: 190px;
+    height: auto; 
+    position: absolute;
+    left: 110px;
+    bottom: 160px; 
+    border-radius: 50%;
+}
+
 .name {
-    padding-left: 400px;
+    padding-left: 140px;
     font-size: 30px;
 }
 
 .comment {
-    width: 500px;
-    padding-left: 700px;
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 380px;
     overflow-wrap: normal;
     text-align: center;
 }
 
 .contact {
-    width: 1500px;
+    width: 100%;
     height: 250px;
 }
 
-.contact h1 {
-    font-size: 70px;
-    padding-top: 20px;
+.contact {
     text-align: center;
 }
+
 
 .contact a {
-    font-size:20px;
-    display: block;
-    text-align: center;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 50px;
+
 }
 
-.fa {
-    font-size:25px;
-}
 
 footer {
     height: 150px;
-    width: 1500px;
+    width: 100%;
     background-color: #ebebeb;
-    
+}
+
+.copyright p {
+    font-size: 20px;
+    text-align: center;
 }
